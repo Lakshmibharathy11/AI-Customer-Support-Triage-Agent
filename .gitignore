@@ -1,0 +1,43 @@
+# Secrets
+.env
+
+# Virtual environment
+.venv/
+venv/
+env/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# FAISS indexes
+indexes/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+
+# HuggingFace cache
+.cache/
+
+# Eval runtime output (keep golden results + ragas scores though,
+# see note below)
+eval_results/latest_scores.json
+
+# Docker
+*.tar
+
+# VS Code
+.vscode/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+*.log
+logs/

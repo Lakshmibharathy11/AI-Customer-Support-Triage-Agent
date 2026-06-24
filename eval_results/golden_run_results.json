@@ -1,0 +1,468 @@
+[
+  {
+    "ticket_id": "GOLD-001",
+    "question": "I forgot my password and the reset email isn't arriving.",
+    "answer": "To reset your password, go to the Stacklytics login page, click \u201cForgot Password,\u201d and enter the email address associated with your account. If the reset email hasn\u2019t arrived, first check your spam/junk folders and verify that you entered the correct email address. Should the email still be missing, please let us know the exact address you\u2019re using so we can investigate further. We\u2019ll prioritize this request and respond within our Gold\u2011tier SLA of 8\u202fhours (Monday\u2011Friday, 9\u202fam\u20115\u202fpm PT).",
+    "contexts": [
+      "To reset your password, navigate to the Stacklytics login page and click on the \"Forgot Password\" link. Enter your email address associated with your Stacklytics account, and you will receive an email with a password reset link. If you encounter any issues during this process, you can reach out to our support team, who will respond within the timeframe designated by your tier: 8 hours for Gold, 4 hours for Diamond, and 1 hour for Platinum. Keep in mind that our support hours are Monday-Friday, 9am-5pm Pacific Time.",
+      "If you're experiencing issues with your API key after resetting your password, you may receive a 401 error, indicating an invalid API key. In this case, you'll need to update your API key in your application, using the API base URL https://api.stacklytics.io/v2. Additionally, be mindful of rate limits to avoid receiving a 429 error, which indicates that the rate limit has been exceeded. If you have any further questions or concerns, you can check our status page at https://status.stacklytics.io for any ongoing issues or outages."
+    ],
+    "ground_truth": "You can reset your password from the login page by clicking 'Forgot Password'. If the email isn't arriving, check your spam folder or contact support if the issue persists.",
+    "expected_category": "password_reset",
+    "actual_category": "password_reset",
+    "expected_outcome": "resolved",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.4,
+    "relevance_score": 0.9
+  },
+  {
+    "ticket_id": "GOLD-002",
+    "question": "How do I change my account password?",
+    "answer": "To change your password, go to the Stacklytics login page and click the **\u201cForgot Password\u201d** link. Enter the email address associated with your account, and you\u2019ll receive an email containing a password\u2011reset link. Follow that link to set a new password. If you run into any problems, let us know and we\u2019ll respond within 4\u202fhours (our Diamond tier response time).",
+    "contexts": [
+      "To reset your password, navigate to the Stacklytics login page and click on the \"Forgot Password\" link. Enter your email address associated with your Stacklytics account, and you will receive an email with a password reset link. If you encounter any issues during this process, you can reach out to our support team, who will respond within the timeframe designated by your tier: 8 hours for Gold, 4 hours for Diamond, and 1 hour for Platinum. Keep in mind that our support hours are Monday-Friday, 9am-5pm Pacific Time."
+    ],
+    "ground_truth": "You can change your password from your account settings page under Security.",
+    "expected_category": "password_reset",
+    "actual_category": "how_to_question",
+    "expected_outcome": "resolved",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-003",
+    "question": "My password reset link expired, can I get a new one?",
+    "answer": "To receive a new password reset link, go to the Stacklytics login page and click the \u201cForgot Password\u201d link. Enter the email address associated with your account, and a fresh reset email will be sent immediately. If the link does not arrive or you encounter any issues, let us know and we\u2019ll respond within 1\u202fhour. This process does not affect your current plan or features.",
+    "contexts": [
+      "To reset your password, navigate to the Stacklytics login page and click on the \"Forgot Password\" link. Enter your email address associated with your Stacklytics account, and you will receive an email with a password reset link. If you encounter any issues during this process, you can reach out to our support team, who will respond within the timeframe designated by your tier: 8 hours for Gold, 4 hours for Diamond, and 1 hour for Platinum. Keep in mind that our support hours are Monday-Friday, 9am-5pm Pacific Time.",
+      "If you're having trouble accessing your Stacklytics account, you may need to reset your password. This process is straightforward and can be completed in a few steps. As a reminder, your Stacklytics account is tied to your company's product-analytics SaaS, which is used by your engineering team to track events and gain valuable insights. Whether you're on the Gold, Diamond, or Platinum tier, resetting your password will not affect your current plan or features."
+    ],
+    "ground_truth": "Password reset links expire after a set time for security. You can request a new one from the login page.",
+    "expected_category": "password_reset",
+    "actual_category": "password_reset",
+    "expected_outcome": "resolved",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.3,
+    "relevance_score": 0.9
+  },
+  {
+    "ticket_id": "GOLD-004",
+    "question": "How do I create my first dashboard in Stacklytics?",
+    "answer": "First, verify that Stacklytics is fully operational by visiting the status page at https://status.stacklytics.io. Then, in the dashboard section of the app, click \u201cCreate New Dashboard\u201d and select the key metrics and events you want to track. As a Gold tier customer, keep the 1\u202fM events\u2011per\u2011month limit in mind while choosing widgets. Follow the on\u2011screen prompts to arrange and name your widgets, then save the dashboard to start visualizing your product\u2019s performance. If you encounter any issues, let us know and we\u2019ll respond within our 8\u2011hour Gold\u2011tier SLA.",
+    "contexts": [
+      "To get the most out of Stacklytics, creating a dashboard is a great first step. As a Gold, Diamond, or Platinum tier customer, you have access to a range of features that can help you visualize your product's performance. If you're new to Stacklytics, start by checking the status page at https://status.stacklytics.io to ensure there are no ongoing issues. You can then begin setting up your dashboard to track key metrics and events.",
+      "As you create your dashboard, keep in mind the features and limits of your tier. For example, Gold tier customers have a limit of 1M events per month, while Diamond and Platinum tier customers have higher or unlimited event limits. If you need to upgrade or have questions about your tier, you can reach out to our support team, who will respond within 8 hours for Gold tier customers, 4 hours for Diamond tier customers, and 1 hour for Platinum tier customers. By following these tips and best practices, you'll be able to create a dashboard that helps you get the most out of Stacklytics and drive insights for your product."
+    ],
+    "ground_truth": "You can create a dashboard from the main navigation by selecting 'New Dashboard' and choosing the metrics you want to track.",
+    "expected_category": "how_to_question",
+    "actual_category": "how_to_question",
+    "expected_outcome": "resolved",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.3,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-005",
+    "question": "What's the best way to track custom events?",
+    "answer": "To track custom events, integrate one of Stacklytics\u2019 SDKs (JavaScript, Python, or Go) into your application and send events to our API at\u202fhttps://api.stacklytics.io/v2. Ensure you include a valid API key in each request and handle common error responses\u2014401 for invalid keys and 429 if you exceed the rate limit. Once the SDK is set up, you can define and emit any custom event names and payloads that are relevant to your product\u2019s performance monitoring. If you run into any issues, our support team is available Monday\u2011Friday, 9\u202fam\u20115\u202fpm PT, and will respond within 4\u202fhours for Diamond customers.",
+    "contexts": [
+      "If you encounter any issues while tracking custom events, our support team is available to help. Platinum plan customers can expect a response within 1 hour, while Diamond and Gold plan customers can expect a response within 4 hours and 8 hours, respectively, during our support hours of Monday-Friday, 9am-5pm Pacific Time. You can also check our status page, https://status.stacklytics.io, for any ongoing issues that may be affecting your event tracking.",
+      "Tracking custom events is a key feature of Stacklytics, allowing engineering teams to gain valuable insights into their application's performance. To get started, you'll need to integrate our SDKs, available in JavaScript, Python, and Go, into your application. Our API base URL, https://api.stacklytics.io/v2, is used to send events to our servers. Make sure to handle common errors, such as 401 for invalid API keys and 429 for rate limit exceeded, to ensure seamless data tracking."
+    ],
+    "ground_truth": "Custom events can be tracked using the SDK's track() method with a descriptive event name and optional properties.",
+    "expected_category": "how_to_question",
+    "actual_category": "how_to_question",
+    "expected_outcome": "resolved",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-006",
+    "question": "Is there a quickstart guide I can follow to get set up?",
+    "answer": "Thank you for reaching out. I've forwarded your request for a quickstart guide to our specialist team, and they will follow up with the appropriate resources shortly.",
+    "contexts": [
+      "(no relevant context found)"
+    ],
+    "ground_truth": "Yes, the quickstart guide walks through installing the SDK, sending your first event, and viewing it in your dashboard.",
+    "expected_category": "how_to_question",
+    "actual_category": "how_to_question",
+    "expected_outcome": "resolved",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-007",
+    "question": "How do I add a new team member with admin permissions?",
+    "answer": "Log in to your Stacklytics account and open the **Team Management** section. Click **Add Member**, enter the new colleague\u2019s email, and select the **Administrator** role from the role dropdown. The Administrator role grants full admin permissions, which you can further customize if needed. Since you\u2019re on a Diamond plan, you have up to 10 seats available for team members. If any issues arise, our support team will respond within 1\u202fhour.",
+    "contexts": [
+      "To assign roles and permissions, you need to log in to your Stacklytics account and navigate to the team management section. From there, you can add new team members and assign them specific roles, such as administrator, developer, or viewer. Each role has its own set of permissions, and you can customize these permissions to fit your team's needs. If you encounter any issues during this process, you can refer to our API documentation at https://api.stacklytics.io/v2 or contact our support team, who will respond within 8 hours for Gold tier, 4 hours for Diamond tier, and 1 hour for Platinum tier.",
+      "Stacklytics allows teams to collaborate effectively by managing roles and permissions. As a team administrator, you can assign different roles to your team members based on their responsibilities. The number of seats available for your team depends on your subscription tier, with Gold including 1 seat, Diamond including up to 10 seats, and Platinum offering unlimited seats. You can find more information about your current plan and available seats by logging into your account."
+    ],
+    "ground_truth": "You can invite team members and assign roles from the account settings under Team Management.",
+    "expected_category": "account_info_request",
+    "actual_category": "how_to_question",
+    "expected_outcome": "resolved",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.2,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-008",
+    "question": "How many seats are included in my current plan?",
+    "answer": "Your Gold subscription includes\u202f1 seat for your team. You can verify the seat count and view your current tier by logging into your Stacklytics account. If you require additional seats, you\u2019ll need to upgrade to a Diamond or Platinum plan, which provide up to 10 seats and unlimited seats respectively. Let us know if you\u2019d like assistance with an upgrade.",
+    "contexts": [
+      "Stacklytics allows teams to collaborate effectively by managing roles and permissions. As a team administrator, you can assign different roles to your team members based on their responsibilities. The number of seats available for your team depends on your subscription tier, with Gold including 1 seat, Diamond including up to 10 seats, and Platinum offering unlimited seats. You can find more information about your current plan and available seats by logging into your account.",
+      "Adding seats to your plan allows you to expand access to Stacklytics for your growing engineering team. The number of seats available to you depends on your current tier: Gold includes 1 seat, Diamond includes up to 10 seats, and Platinum offers unlimited seats. If you're on the Gold tier and need more seats, you'll need to upgrade to Diamond or Platinum. You can check your current tier and seat count by logging into your Stacklytics account."
+    ],
+    "ground_truth": "Gold tier includes 1 seat. Additional seats can be added for an extra cost.",
+    "expected_category": "account_info_request",
+    "actual_category": "account_info_request",
+    "expected_outcome": "resolved",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 0.2
+  },
+  {
+    "ticket_id": "GOLD-009",
+    "question": "What payment terms does the Diamond tier have?",
+    "answer": "The Diamond tier operates on Net\u201115 payment terms, meaning the invoice is due within 15\u202fdays of issuance. Payments for this tier are invoiced rather than auto\u2011charged. This differs from the Gold tier, which uses auto\u2011charged Net\u201115 terms.",
+    "contexts": [
+      "The following table provides an overview of the billing tiers and their respective limits:\n| Tier | Payment Terms | Seats | Events per Month |\n| --- | --- | --- | --- |\n| Gold | Net-15, auto-charged | 1 | 1M |\n| Diamond | Net-15, invoiced | up to 10 | 10M |\n| Platinum | Net-30, invoiced | unlimited | unlimited |\nThis table highlights the key differences between the Gold, Diamond, and Platinum tiers, including payment terms, number of seats, and events per month.",
+      "Stacklytics is a B2B product-analytics SaaS designed for engineering teams, offering three customer tiers: Gold, Diamond, and Platinum. The Gold tier is the entry tier, which includes 1 seat, 1M events/mo, and standard support response in 8 hours. The Diamond tier is the mid tier, offering up to 10 seats, 10M events/mo, and priority support response in 4 hours. The Platinum tier is the top tier, providing unlimited seats, unlimited events, SSO/SAML, a dedicated CSM, and support response in 1 hour."
+    ],
+    "ground_truth": "Diamond tier is billed Net-15 and invoiced rather than auto-charged.",
+    "expected_category": "billing_question",
+    "actual_category": "billing_question",
+    "expected_outcome": "resolved",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-010",
+    "question": "How do I update my credit card on file?",
+    "answer": "To update your credit card, log in to your Stacklytics account and go to the Billing section. From there you can add a new payment method or edit the existing one. After entering the new card details, be sure to save the changes. If you encounter any error messages or a declined payment notice, please let us know so we can investigate further.",
+    "contexts": [
+      "To update your payment method, simply log in to your Stacklytics account and navigate to the billing section. From there, you can add a new payment method or update an existing one. If you're experiencing issues with your payment method, such as a declined payment, you may receive an error message or notice from our system. In some cases, you may also encounter error codes like 401, which indicates an invalid API key, but this is unrelated to payment method updates."
+    ],
+    "ground_truth": "You can update your payment method from the billing settings page.",
+    "expected_category": "billing_question",
+    "actual_category": "billing_question",
+    "expected_outcome": "resolved",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-011",
+    "question": "What happens to my unused credits if I downgrade my plan?",
+    "answer": "When you downgrade, any unused portion of your current billing cycle is converted into a prorated credit based on the remaining days. That credit is applied automatically to future invoices and is available to all tiers, including Platinum. If you\u2019re on an annual plan, you also retain the option to use our 30\u2011day money\u2011back guarantee. Should you have any billing disputes, submit a ticket tagged \u201cbilling\u2011dispute\u201d within 14\u202fdays of the invoice date.",
+    "contexts": [
+      "If you decide to downgrade your plan, you'll receive a prorated credit for the remaining days in your billing cycle. Additionally, if you're on an annual plan, you can take advantage of our 30-day money-back guarantee. Please note that any disputes regarding your invoice must be submitted as a ticket tagged \"billing-dispute\" within 14 days of the invoice date. You can find more information about our billing and refund policies on our website, and check the status of our services at https://status.stacklytics.io.",
+      "Proration and credits are essential concepts in managing your Stacklytics subscription. When you downgrade your plan, you are eligible for prorated credits, which can be used towards future invoices. This policy applies to all tiers, including Gold, Diamond, and Platinum. It's essential to note that prorated credits are calculated based on the number of days remaining in your billing cycle."
+    ],
+    "ground_truth": "Downgrading your plan results in prorated credits applied to future invoices.",
+    "expected_category": "billing_question",
+    "actual_category": "account_info_request",
+    "expected_outcome": "resolved",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-012",
+    "question": "PDF export has been failing with a 500 error since this morning.",
+    "answer": "Thank you for reporting the PDF export issue. We\u2019ve escalated this to our specialist team, and they will investigate and follow up with you shortly.",
+    "contexts": [
+      "(no relevant context found)"
+    ],
+    "ground_truth": "This has been escalated to our engineering team to investigate the export failure.",
+    "expected_category": "export_bug",
+    "actual_category": "export_bug",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-013",
+    "question": "Our dashboard export feature stopped working after the last update.",
+    "answer": "Verify that the API key used by the dashboard export process is still valid, as an invalid key will return a 401 error and prevent the export from completing. Check the recent export logs for any 429 responses, which indicate the request may have hit the rate limit after the update. If you see an SDK\u20111042 error, the event schema validation may be failing and could block the export functionality. Reviewing these error codes should help pinpoint why the export stopped working and guide the next steps for resolution.",
+    "contexts": [
+      "When setting up your dashboard, make sure to use a valid API key to avoid a 401 error, which indicates an invalid API key. You can use our JavaScript, Python, or Go SDKs to integrate with our API, which is located at https://api.stacklytics.io/v2. Be mindful of the rate limit to avoid a 429 error, which means you've exceeded the rate limit. If you encounter an SDK-1042 error, it means there's an issue with your event schema validation."
+    ],
+    "ground_truth": "This has been escalated to engineering to investigate the export regression.",
+    "expected_category": "export_bug",
+    "actual_category": "export_bug",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-014",
+    "question": "Events I track aren't showing up in my exported reports.",
+    "answer": "Verify that the API key used in your integration is valid and correctly configured; an invalid key will generate a 401 error and prevent events from being recorded. Check the API base URL (https://api.stacklytics.io/v2) and confirm the key matches the documentation for your account. Once the key is confirmed, re\u2011track the events and generate a new export; the events should then appear in the report. If the issue persists after confirming the key, let us know so we can investigate further.",
+    "contexts": [
+      "If your events are not appearing in your dashboard, there are several potential causes to investigate. First, ensure that your API key is valid and correctly configured in your application. An invalid API key will result in a 401 error, indicating that the key is not recognized by our system. You can verify your API key by checking the API base URL, https://api.stacklytics.io/v2, and reviewing your API key documentation."
+    ],
+    "ground_truth": "This has been escalated to engineering to investigate why tracked events are missing from exports.",
+    "expected_category": "export_bug",
+    "actual_category": "export_bug",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.6,
+    "relevance_score": 0.9
+  },
+  {
+    "ticket_id": "GOLD-015",
+    "question": "The app crashes every time I try to log in on Chrome.",
+    "answer": "Please verify that the API key entered for your account has no typos or formatting issues, as an invalid key can cause login failures. Ensure you are using the correct API key for your Stacklytics account and that it is properly configured in the application. If the problem persists, try regenerating the API key in the dashboard and update the app with the new key. Our support team is available to assist, and we aim to respond within 4\u202fhours for Diamond\u2011tier customers.",
+    "contexts": [
+      "To troubleshoot the 401 error, start by checking your API key for any typos or formatting issues. Ensure that you're using the correct API key for your Stacklytics account, and that it's properly configured in your application. If you're still experiencing issues, try regenerating your API key and updating your application with the new key. Our support team is available to assist you with any questions or concerns, and response times vary depending on your tier: 8 hours for Gold, 4 hours for Diamond, and 1 hour for Platinum."
+    ],
+    "ground_truth": "This has been escalated to engineering to investigate the login crash.",
+    "expected_category": "login_crash",
+    "actual_category": "login_crash",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 0.0
+  },
+  {
+    "ticket_id": "GOLD-016",
+    "question": "I get a blank white screen after entering my credentials.",
+    "answer": "Thank you for reporting the issue. We\u2019ve forwarded your case to a specialist who will investigate and follow up with you shortly. We appreciate your patience.",
+    "contexts": [
+      "(no relevant context found)"
+    ],
+    "ground_truth": "This has been escalated to engineering to investigate the login issue.",
+    "expected_category": "login_crash",
+    "actual_category": "login_crash",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-017",
+    "question": "Getting a 401 invalid API key error even though I just generated a new one.",
+    "answer": "Verify that the API key you are using matches exactly the value shown in the Stacklytics dashboard, without any extra spaces or characters. Ensure the request is sent to the correct base URL\u202f`https://api.stacklytics.io/v2` and that the key is placed in the proper header as documented. If the key was copied from the UI, try copying it again or generate a fresh key and update your configuration. After confirming these settings, retry the request; a persistent 401 indicates the key is still not recognized and may require us to re\u2011activate it on our side.",
+    "contexts": [
+      "If your events are not appearing in your dashboard, there are several potential causes to investigate. First, ensure that your API key is valid and correctly configured in your application. An invalid API key will result in a 401 error, indicating that the key is not recognized by our system. You can verify your API key by checking the API base URL, https://api.stacklytics.io/v2, and reviewing your API key documentation.",
+      "When using our API (base URL: https://api.stacklytics.io/v2) or SDKs (available in JavaScript, Python, and Go), you may encounter specific error codes. For instance, the 401 error indicates an invalid API key, which can be resolved by verifying and updating your API key. The SDK-1042 error is related to event schema validation failure, and our support team can assist with troubleshooting. If you're experiencing rate limit issues (429 error), consider optimizing your API requests or upgrading to a higher tier, such as Diamond or Platinum, for increased event limits."
+    ],
+    "ground_truth": "This has been escalated to engineering, though double-check the key is copied without extra whitespace and matches the correct environment.",
+    "expected_category": "integration_failure",
+    "actual_category": "integration_failure",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.3,
+    "relevance_score": 0.9
+  },
+  {
+    "ticket_id": "GOLD-018",
+    "question": "We keep hitting 429 rate limit errors during peak traffic.",
+    "answer": "The 429 error indicates that the request rate has exceeded the allowed limit for the API. During peak traffic, consider throttling your calls or batching events to stay within the limit. You can also review the current limits and any ongoing incidents on our status page at https://status.stacklytics.io. If you need assistance adjusting your integration to reduce request volume, let us know and we\u2019ll help you optimize the calls.",
+    "contexts": [
+      "If you're experiencing issues with your API key after resetting your password, you may receive a 401 error, indicating an invalid API key. In this case, you'll need to update your API key in your application, using the API base URL https://api.stacklytics.io/v2. Additionally, be mindful of rate limits to avoid receiving a 429 error, which indicates that the rate limit has been exceeded. If you have any further questions or concerns, you can check our status page at https://status.stacklytics.io for any ongoing issues or outages.",
+      "When setting up your dashboard, make sure to use a valid API key to avoid a 401 error, which indicates an invalid API key. You can use our JavaScript, Python, or Go SDKs to integrate with our API, which is located at https://api.stacklytics.io/v2. Be mindful of the rate limit to avoid a 429 error, which means you've exceeded the rate limit. If you encounter an SDK-1042 error, it means there's an issue with your event schema validation."
+    ],
+    "ground_truth": "This has been escalated to engineering to review your rate limit allocation given your traffic patterns.",
+    "expected_category": "integration_failure",
+    "actual_category": "integration_failure",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.4,
+    "relevance_score": 0.9
+  },
+  {
+    "ticket_id": "GOLD-019",
+    "question": "Our events are failing with an SDK-1042 schema validation error.",
+    "answer": "The SDK\u20111042 error indicates that the events you\u2019re sending do not match the expected schema, so the validation step is failing. Please review the definition of each event in your integration and ensure all required fields, data types, and naming conventions align with the Stacklytics schema documentation. If you\u2019ve recently added or modified events, double\u2011check that the payload structure matches the updated schema. After correcting any discrepancies, resend the events and they should be accepted without the SDK\u20111042 error.",
+    "contexts": [
+      "Before assuming an outage, please check your API key and ensure it is valid. A 401 error code indicates an invalid API key, which can be resolved by verifying your credentials. Additionally, be mindful of rate limits, as exceeding them will result in a 429 error code with the message RATE_LIMIT_EXCEEDED. If you are experiencing issues with event schema validation, you may encounter an SDK-1042 error, which can be resolved by reviewing your event schema.",
+      "When setting up your dashboard, make sure to use a valid API key to avoid a 401 error, which indicates an invalid API key. You can use our JavaScript, Python, or Go SDKs to integrate with our API, which is located at https://api.stacklytics.io/v2. Be mindful of the rate limit to avoid a 429 error, which means you've exceeded the rate limit. If you encounter an SDK-1042 error, it means there's an issue with your event schema validation."
+    ],
+    "ground_truth": "This has been escalated to engineering to investigate the schema validation failure.",
+    "expected_category": "integration_failure",
+    "actual_category": "integration_failure",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.4,
+    "relevance_score": 0.9
+  },
+  {
+    "ticket_id": "GOLD-020",
+    "question": "I was charged twice this month and need a refund for the duplicate charge.",
+    "answer": "To address the duplicate charge, please submit a billing\u2011dispute ticket by tagging it with \u201cbilling-dispute\u201d within 14\u202fdays of the invoice date. Our support team will review the request and process the refund according to our standard refund policy, which applies to all tiers including Platinum. If you need any further assistance while we investigate, let us know.",
+    "contexts": [
+      "Stacklytics offers a refund policy to ensure customer satisfaction with our product-analytics SaaS. If you're not satisfied with our service, you can request a refund within a certain timeframe. This policy applies to all our customer tiers, including Gold, Diamond, and Platinum. Our refund policy is designed to provide flexibility and fairness to our customers.",
+      "To request a refund, please submit a ticket to our support team. If you have any billing disputes, please tag your ticket as \"billing-dispute\" within 14 days of the invoice date. Our support team will review your request and process your refund according to our policy. You can also check our status page at https://status.stacklytics.io for any updates on our service uptime and availability, which is backed by our uptime SLA of 99.95% for Platinum, 99.9% for Diamond, and 99.5% for Gold."
+    ],
+    "ground_truth": "This has been escalated to our billing team to investigate the duplicate charge.",
+    "expected_category": "billing_dispute",
+    "actual_category": "billing_dispute",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-021",
+    "question": "My invoice shows charges for seats we don't actually have.",
+    "answer": "Please submit a billing\u2011dispute ticket (tagged \u201cbilling-dispute\u201d) within 14\u202fdays of the invoice date so we can review the seat charges. Our support team will investigate the discrepancy and, if appropriate, process a refund according to our refund policy. If you need any assistance creating the ticket, let us know and we\u2019ll guide you through the process.",
+    "contexts": [
+      "To request a refund, please submit a ticket to our support team. If you have any billing disputes, please tag your ticket as \"billing-dispute\" within 14 days of the invoice date. Our support team will review your request and process your refund according to our policy. You can also check our status page at https://status.stacklytics.io for any updates on our service uptime and availability, which is backed by our uptime SLA of 99.95% for Platinum, 99.9% for Diamond, and 99.5% for Gold.",
+      "Our support team is available Monday-Friday, 9am-5pm Pacific Time, to assist you with any questions or issues you may have. You can also check our status page at https://status.stacklytics.io for any updates on our service. If you have any billing disputes, please submit a ticket tagged \"billing-dispute\" within 14 days of the invoice date. Additionally, you can review our uptime SLA, which guarantees 99.95% uptime for Platinum tier customers, 99.9% for Diamond tier customers, and 99.5% for Gold tier customers."
+    ],
+    "ground_truth": "This has been escalated to our billing team to review the seat discrepancy on your invoice.",
+    "expected_category": "billing_dispute",
+    "actual_category": "billing_dispute",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-022",
+    "question": "I want to dispute this month's invoice, the event count looks wrong.",
+    "answer": "Please submit a ticket tagged **\u201cbilling\u2011dispute\u201d** within 14\u202fdays of the invoice date so we can review the event count and address any discrepancies. Include the invoice number, the period in question, and any supporting data (e.g., event logs) that illustrate the issue. Once we receive the tagged ticket, our billing team will investigate and respond during our regular support hours (Mon\u2011Fri, 9\u202fam\u20115\u202fpm PT). If you need to verify service uptime for the period, you can also check our status page at https://status.stacklytics.io.",
+    "contexts": [
+      "Our support team is available Monday-Friday, 9am-5pm Pacific Time, to assist you with any questions or issues you may have. You can also check our status page at https://status.stacklytics.io for any updates on our service. If you have any billing disputes, please submit a ticket tagged \"billing-dispute\" within 14 days of the invoice date. Additionally, you can review our uptime SLA, which guarantees 99.95% uptime for Platinum tier customers, 99.9% for Diamond tier customers, and 99.5% for Gold tier customers.",
+      "If you decide to downgrade your plan, you'll receive a prorated credit for the remaining days in your billing cycle. Additionally, if you're on an annual plan, you can take advantage of our 30-day money-back guarantee. Please note that any disputes regarding your invoice must be submitted as a ticket tagged \"billing-dispute\" within 14 days of the invoice date. You can find more information about our billing and refund policies on our website, and check the status of our services at https://status.stacklytics.io."
+    ],
+    "ground_truth": "This has been escalated to billing to review your event count discrepancy.",
+    "expected_category": "billing_dispute",
+    "actual_category": "billing_dispute",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.3,
+    "relevance_score": 0.9
+  },
+  {
+    "ticket_id": "GOLD-023",
+    "question": "This is too expensive for what we're getting, I want to cancel.",
+    "answer": "We\u2019ve received your request to cancel and understand your concerns about pricing. I\u2019ve forwarded this to our specialist team, and they will follow up with you shortly to discuss next steps.",
+    "contexts": [
+      "(no relevant context found)"
+    ],
+    "ground_truth": "This has been escalated to account management to discuss your concerns before cancellation.",
+    "expected_category": "cancellation_risk",
+    "actual_category": "cancellation_risk",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-024",
+    "question": "We're considering switching to a competitor, please cancel our subscription.",
+    "answer": "We\u2019ve received your request to cancel your subscription and have forwarded it to our specialist team. They will review your account and follow up with you shortly.",
+    "contexts": [
+      "(no relevant context found)"
+    ],
+    "ground_truth": "This has been escalated to account management to discuss retention options.",
+    "expected_category": "cancellation_risk",
+    "actual_category": "cancellation_risk",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-025",
+    "question": "Cancel my plan, we're not using this enough to justify the cost.",
+    "answer": "We\u2019ve received your request to cancel your plan and understand your concerns. I\u2019ve forwarded this to our specialist team, and they\u2019ll be in touch shortly to assist you further.",
+    "contexts": [
+      "(no relevant context found)"
+    ],
+    "ground_truth": "This has been escalated to account management to discuss your usage and options.",
+    "expected_category": "cancellation_risk",
+    "actual_category": "cancellation_risk",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-026",
+    "question": "Could you add support for exporting data directly to Google Sheets?",
+    "answer": "Thank you for your request to add support for exporting data directly to Google Sheets. I\u2019ve forwarded it to our product specialists, and someone will follow up with you shortly.",
+    "contexts": [
+      "(no relevant context found)"
+    ],
+    "ground_truth": "This has been logged and forwarded to our product team for consideration.",
+    "expected_category": "feature_request",
+    "actual_category": "feature_request",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-027",
+    "question": "It would be great if event batching had a configurable retry policy.",
+    "answer": "At this time, event batching does not include a configurable retry policy in the Stacklytics SDK. You can still optimize reliability by following the recommended best practices for batching, such as ensuring a valid API key and correct event schema to avoid 401 and SDK\u20111042 errors. Monitoring your batch configuration and handling any rate\u2011limit (429) responses manually will help maintain smooth data ingestion. For detailed guidance, please refer to the event batching section of the API documentation at\u202fhttps://api.stacklytics.io/v2.",
+    "contexts": [
+      "Configuring event batching is an essential step in optimizing your Stacklytics integration. Event batching allows you to group multiple events together, reducing the number of API requests and improving overall performance. This is particularly useful for customers on the Gold tier, who have a limit of 1M events per month. By batching events, you can minimize the risk of exceeding this limit and incurring a 429 error (RATE_LIMIT_EXCEEDED).",
+      "When configuring event batching, it's essential to be aware of common errors such as the 401 error (invalid API key) and the SDK-1042 error (event schema validation failure). To avoid these errors, ensure that your API key is valid and your event schema is correctly formatted. Additionally, refer to the Stacklytics API documentation at https://api.stacklytics.io/v2 for more information on event batching and troubleshooting. By following best practices and monitoring your event batching configuration, you can optimize your Stacklytics integration and ensure seamless data tracking."
+    ],
+    "ground_truth": "This has been logged and forwarded to our product team for consideration.",
+    "expected_category": "feature_request",
+    "actual_category": "feature_request",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.3,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-028",
+    "question": "How do I set up SSO and SAML for my organization?",
+    "answer": "Thank you for reaching out about configuring SSO and SAML for your organization. This functionality is part of our Platinum plan, which includes advanced identity\u2011provider integrations. I\u2019d be happy to connect you with our sales team to discuss upgrading your account and getting you set up quickly. Please let me know if you\u2019d like me to arrange an introduction.",
+    "contexts": [
+      "To configure SSO/SAML, you will need to provide your identity provider's metadata to Stacklytics, which will then be used to establish a secure connection between your systems. You can find the necessary configuration settings in your Stacklytics account, under the security settings section. If you encounter any issues during the setup process, you can refer to our API documentation at https://api.stacklytics.io/v2 or contact our support team, who will respond within 1 hour, as per our Platinum support SLA."
+    ],
+    "ground_truth": "SSO/SAML is a Platinum-tier feature. I'd be happy to connect you with sales to discuss upgrading.",
+    "expected_category": "account_info_request",
+    "actual_category": "how_to_question",
+    "expected_outcome": "escalated",
+    "actual_outcome": "resolved",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-029",
+    "question": "Can I get a dedicated CSM for our account?",
+    "answer": "Thank you for reaching out with your request for a dedicated Customer Success Manager. This service is currently offered as part of our Platinum plan, which provides a higher level of personalized support. I\u2019d be happy to connect you with our sales team so you can explore upgrading to Platinum and gain access to a dedicated CSM. Please let me know if you\u2019d like me to make an introduction.",
+    "contexts": [
+      "The Platinum plan is the top tier offered by Stacklytics, designed to provide the highest level of service and support for engineering teams. This plan includes unlimited seats, unlimited events, and Single Sign-On (SSO) with SAML, ensuring seamless integration and scalability. With a dedicated Customer Success Manager (CSM), Platinum customers receive personalized support and guidance. The Platinum plan also features a 1-hour support response time, with escalations reviewed within 2 business hours."
+    ],
+    "ground_truth": "A dedicated CSM is included with the Platinum tier. I can connect you with sales to discuss upgrading.",
+    "expected_category": "account_info_request",
+    "actual_category": "feature_request",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 1.0,
+    "relevance_score": 1.0
+  },
+  {
+    "ticket_id": "GOLD-030",
+    "question": "Can Stacklytics integrate with our custom in-house CRM built in COBOL?",
+    "answer": "Our current documentation does not specify native integration with custom in\u2011house systems such as a COBOL\u2011based CRM. Integration capabilities can vary based on the specific APIs and connectors we support, which are typically discussed during the sales or onboarding process. I recommend contacting our solutions team so they can assess your requirements and determine the best approach. If you\u2019d like, we can arrange a call with a technical specialist to explore possible integration paths.",
+    "contexts": [
+      "Stacklytics is a B2B product-analytics SaaS designed for engineering teams, offering three customer tiers: Gold, Diamond, and Platinum. Each tier provides a unique set of features and support options, including standard support response times of 8 hours for Gold, 4 hours for Diamond, and 1 hour for Platinum. The Platinum tier also includes a dedicated Customer Success Manager (CSM) and Single Sign-On (SSO) with SAML. To get started with Stacklytics, you can explore our features and pricing on our website.",
+      "Stacklytics is a B2B product-analytics SaaS designed for engineering teams, offering three customer tiers: Gold, Diamond, and Platinum. The Gold tier is the entry tier, which includes 1 seat, 1M events/mo, and standard support response in 8 hours. The Diamond tier is the mid tier, offering up to 10 seats, 10M events/mo, and priority support response in 4 hours. The Platinum tier is the top tier, providing unlimited seats, unlimited events, SSO/SAML, a dedicated CSM, and support response in 1 hour."
+    ],
+    "ground_truth": "Your request has been forwarded to a specialist who will follow up regarding custom integration feasibility.",
+    "expected_category": "integration_failure",
+    "actual_category": "how_to_question",
+    "expected_outcome": "escalated",
+    "actual_outcome": "escalated",
+    "faithfulness_score": 0.0,
+    "relevance_score": 1.0
+  }
+]
