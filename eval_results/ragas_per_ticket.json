@@ -1,0 +1,58 @@
+[
+  {
+    "ticket_id": "GOLD-001",
+    "faithfulness": 0.5,
+    "answer_relevancy": 0.733936071395874,
+    "context_precision": 0.0,
+    "context_recall": 0.6667
+  },
+  {
+    "ticket_id": "GOLD-004",
+    "faithfulness": 0.6,
+    "answer_relevancy": 0.7308334112167358,
+    "context_precision": 1.0,
+    "context_recall": 0.0
+  },
+  {
+    "ticket_id": "GOLD-009",
+    "faithfulness": 0.75,
+    "answer_relevancy": 0.9200482368469238,
+    "context_precision": 0.5,
+    "context_recall": 1.0
+  },
+  {
+    "ticket_id": "GOLD-012",
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7036129832267761,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "ticket_id": "GOLD-020",
+    "faithfulness": 0.6667,
+    "answer_relevancy": 0.7149888873100281,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "ticket_id": "GOLD-023",
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.6118093729019165,
+    "context_precision": 0.0,
+    "context_recall": 0.0
+  },
+  {
+    "ticket_id": "GOLD-028",
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.8321207761764526,
+    "context_precision": 1.0,
+    "context_recall": 0.0
+  },
+  {
+    "ticket_id": "GOLD-030",
+    "faithfulness": 0.0,
+    "answer_relevancy": 0.7149401903152466,
+    "context_precision": 0.5,
+    "context_recall": 0.0
+  }
+]
